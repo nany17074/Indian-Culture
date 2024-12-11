@@ -1,0 +1,52 @@
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://source.unsplash.com/1600x900/?food,drinking water");
+   
+}
+.mapcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+}
+.map_img_box{
+    
+    border: 1px solid rgba(255 ,255, 255, 0.4);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.3));
+    box-shadow: 10px 10px 40px rgba(0,0,0,0,0.3);
+    transition: all 0.3s ease-in;
+}
+.map_img_box p{
+    word-wrap: break-word;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.map_img_box:hover{
+    transform: scale(1.05);
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.3));
+    box-shadow: 10px 10px 30px rgba(0,0,0,0,0.3);
+    /* z-index: 1; */
+}
+.mapimage{
+    /* border: 1px solid sandybrown ; */
+    text-align: center;
+    padding: 4px;
+    object-fit: contain;
+
+}
+
+@media screen and (max-width:600px) {
+    .mapimage img{
+        height: 100%;
+        width: auto;
+    }
+}

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+:root {
+    --bg-color: #111111;
+    --second-bg-color: #151515;
+    --text-color: white;
+    --main-color: #04fffb;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;    
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9%;
+}
+
+
+
+.navbar a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+    width: 50px;
+}
+
+
+.heading{
+font-size: 8rem; 
+text-align: center;
+margin: 5rem 0;
+}
+
+.monuments{
+background: var(--second-bg-color);
+}
+.monuments-box{
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.monuments.heading{
+margin-bottom: 5rem;
+}
+.monuments-box img{
+width: 15rem;
+border-radius: 50%;
+border: 3px solid var(--main-color);
+box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 3rem;
+}
+.monument-item{
+min-height: 550px;
+max-width: 450px;
+background: rgba(0, 0, 0, 0.7);
+border: 3px solid rgba(238, 238, 238, 0.2);
+border-radius: 2rem;
+margin: 0 2rem;
+padding: 30px 60px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 1.5rem;
+color: white;
+transition: 0.4s ease-in-out;
+}
+.monument-item:hover{
+border: 3px solid var(--main-color);
+transform: translateY(-10px) scale(1.03);
+box-shadow: 0050px var(--main-color);
+}
+.monument-item h2{
+font-size: 2.8rem;
+}
+.monument-item p{
+font-size: 1.3rem;
+}
+
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--bg-color);
+}
+
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 16px;
+    color: white;
+}
+
+ @media(max-width:991px){
+header{
+padding: 2rem 3%;
+}
+section{
+padding: 10rem 3% 2rem;
+}
+
+.projects .wrapper{
+    grid-template-columns: repeat(1,1fr);
+}
+
+.footer{
+padding: 2rem 3%;
+}
+}
+
+
+
+

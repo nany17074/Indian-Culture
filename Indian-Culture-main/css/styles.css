@@ -1,0 +1,143 @@
+/* parallex effect class*/
+
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+* {
+  scrollbar-color: #fff transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c0522;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.home-section{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.home-section:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; 
+}
+.home-section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+.home-section img#front{
+  z-index: 10;
+  height:100%;
+}
+/* align image under another front */
+.home-section img#mid{
+  z-index: 10;
+
+  height:100%;
+}
+#people{
+  height: auto;
+  width: auto;
+}
+#riksha{
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 30%;
+  z-index: 20;
+  pointer-events: none;
+}
+#greet{
+  font-family: 'Tiro Devanagari Hindi', serif;
+  /*-webkit-text-stroke: 3px black;*/
+  font-size: 11rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 19;
+  color:rgb(202, 202, 202);
+}
+#logo-name{
+  font-family: "dosis", sans-serif;
+}
+
+.footer{
+  background-color: #111417;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#linkedin{
+  background-color: #0072b1;
+}
+#instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+#youtube{
+  background-color: #ff0000;
+}
+@media only screen and (max-width: 896px) {
+  .home-section{
+      height: 50%;
+      width: 100%;
+      padding: 0px;
+  }
+  .home-section img#front{
+  height:100% ;
+  z-index: 10;
+  bottom: 0;
+  
+
+}
+.home-section img#bg{
+  height:100% ;
+
+}
+.home-section img#mid{
+  height:100% ;
+
+}
+#riksha{
+  /* width: 15%;
+  height: 5%;
+  z-index: 20;
+  /* pointer-events: none; */
+  visibility: hidden;
+}
+#greet{
+  /* font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 11rem;
+  position: absolute;
+  z-index: 19;
+  color:rgb(202, 202, 202);*/
+  visibility: hidden;
+}
+}

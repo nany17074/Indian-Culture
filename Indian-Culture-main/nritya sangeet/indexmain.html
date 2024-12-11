@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nritya Sangeet</title>
+     <!--Font awesome cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!--custom css file link-->
+     <link rel="stylesheet" href="indexmain.css"> 
+</head>
+<body>
+
+    <!--Header section starts-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Nritya Sangeet</a>
+        <nav class="navbar">
+            <a href="..\index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+            <div class="burger-icon" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <div id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li>Andhra Pradesh</li>
+                <li>Arunachal Pradesh</li>
+                <li>Assam</li>
+                <li>Bihar</li>
+                <li>Chhattisgarh</li>
+                <li>Goa</li>
+                <li>Gujarat</li>
+                <li>Haryana</li>
+                <li>Himachal Pradesh</li>
+                <li>Jharkhand</li>
+                <li>Karnataka</li>
+                <li>Kerala</li>
+                <li>Madhya Pradesh</li>
+                <li>Maharashtra</li>
+                <li>Manipur</li>
+                <li>Meghalaya</li>
+                <li>Mizoram</li>
+                <li>Nagaland</li>
+                <li>Odisha</li>
+                <li>Punjab</li>
+                <li>Rajasthan</li>
+                <li>Sikkim</li>
+                <li>Tamil Nadu</li>
+                <li>Telangana</li>
+                <li>Tripura</li>
+                <li>Uttar Pradesh</li>
+                <li>Uttarakhand</li>
+                <li>West Bengal</li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+          </div>
+        </header>
+         <!--Header section ends-->
+    
+<br><br><br><br>
+<br><br><br>
+         
+         <h1 style="font-size: 3em; text-align: center; display: flex; justify-content: center; align-items: center;">
+            CHOOSE YOUR REGION
+        </h1>
+    <section class="mapcontainer">
+   <div class="map_img_box">
+       <p>click on any state or territory to choose your favourite dance and music art form.</p><div class="mapimage"> 
+       <!-- <img src="mapimg.png" alt="map" width=auto height=auto usemap="#map_example">
+    <map name="map_example"> </map> -->
+    
+<img src="mapimg.png"  alt="map" width=auto height=auto usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Jammu &amp; Kashmir" title="Jammu &amp; Kashmir" href="index - jammu.html" coords="176,103,169,100,162,97,155,96,155,88,149,88,143,85,140,75,138,65,137,56,141,51,147,48,147,41,144,36,137,29,129,25,126,17,129,11,135,9,143,7,153,7,157,2,164,2,171,4,177,7,181,14,187,19,192,24,197,27,201,32,206,39,213,39,220,39,228,34,237,34,244,35,251,39,252,46,248,54,245,60,240,68,231,70,228,78,229,86,235,86,235,96,231,104,227,95,219,97,211,93,202,90,193,85,186,85,178,89,175,95,173,101,174,95" shape="poly">
+    <area target="" alt="Himachal Pradesh " title="Himachal Pradesh " href="index - Himachal.html" coords="203,141,198,138,192,133,189,127,183,122,179,118,177,111,176,105,179,96,183,89,189,87,197,91,204,91,211,93,216,99,219,105,223,112,223,119,228,127,221,128,212,127,207,131" shape="poly">
+    <area target="" alt="Uttar Pradesh" title="Uttar Pradesh" href="index - UP.html" coords="204,147,197,150,198,157,196,165,199,173,201,181,202,192,198,199,203,209,209,208,221,213,224,219,226,228,222,236,212,243,209,255,208,263,213,267,214,260,220,244,227,247,234,247,243,246,258,246,251,248,263,249,271,252,277,253,281,259,291,260,290,266,291,273,295,277,300,273,302,267,303,259,308,253,314,248,323,248,316,241,316,235,322,231,322,223,314,216,307,211,287,210,296,213,264,195,242,176,229,178,217,168,213,154" shape="poly">
+    <area target="" alt="Haryana" title="Haryana" href="index - Haryana.html" coords="191,135,189,141,183,146,176,150,168,154,162,157,160,155,152,151,144,150,148,157,153,160,164,164,163,170,166,177,171,181,169,192,178,181,184,185,186,193,194,189,202,144,193,169,196,152" shape="poly">
+    <area target="" alt="Punjab" title="Punjab" href="index - Punjab.html" coords="170,103,164,103,156,105,150,115,169,116,174,124,171,127,168,130,154,130,141,131,135,142,156,147,166,152,178,146,186,140,186,134,181,125" shape="poly">
+    <area target="" alt="Rajasthan" title="Rajasthan" href="index - Rajasthan.html" coords="132,143,126,148,121,156,117,162,92,184,73,187,70,179,54,195,50,203,61,207,61,221,71,231,73,247,86,251,91,254,101,257,108,257,110,264,118,265,114,271,121,273,122,279,130,280,139,270,141,245,149,240,156,244,162,250,166,256,161,266,170,264,177,260,179,251,188,246,174,246,174,236,179,227,196,218,194,205,183,200,182,190,172,195,164,186,155,172,153,166,141,161,138,149" shape="poly">
+    <area target="" alt="Madhya Pradesh" title="Madhya Pradesh" href="index - Madhya pradesh.html" coords="152,248,143,252,144,262,149,273,142,276,139,281,136,289,132,296,129,305,135,310,141,316,151,319,163,321,178,320,189,315,193,320,201,321,211,320,216,315,224,316,235,323,240,316,247,311,253,304,264,299,259,287,269,289,278,286,290,284,290,276,288,270,280,266,270,262,260,256,253,258,243,252,223,256,222,271,209,272,201,264,199,254,205,248,211,238,217,229,219,221,210,216,200,220,195,223,186,230,181,236,196,244,186,253,183,266,174,269,164,272,155,272,157,257,170,329" shape="poly">
+    <area target="" alt="Maharashtra" title="Maharashtra" href="index - Maharashtra.html" coords="130,309,124,313,121,319,119,325,122,331,115,336,109,341,101,345,95,350,95,357,96,366,104,369,111,375,100,381,112,383,109,393,100,390,101,419,104,425,110,430,118,424,128,412,138,409,146,404,156,404,165,400,170,390,178,387,185,380,189,369,191,361,195,366,198,357,208,355,214,358,228,363,237,380,237,370,250,367,239,357,241,344,241,335,241,325,221,320,215,326,199,326,188,325,188,317,167,334,159,325,138,324" shape="poly">
+    <area target="" alt="Gujrat" title="Gujrat" href="index - Gujarat.html" coords="101,333,111,329,116,314,124,302,124,284,111,274,98,264,91,261,79,258,68,264,59,261,39,260,25,264,25,273,35,278,54,278,67,277,54,285,48,290,42,293,31,293,38,305,47,319,59,325,75,324,100,311,98,297,98,303,90,300,86,309,83,316" shape="poly">
+    <area target="" alt="Goa" title="Goa" href="index - Goa.html" coords="105,437,113,437,112,450" shape="poly">
+    <area target="" alt="Hyderabad" title="Hyderabad" href="#" coords="203,357,199,364,192,368,192,377,185,386,186,398,188,407,182,413,180,421,182,431,180,437,190,435,202,430,207,426,217,418,224,415,244,406,244,388,235,384,232,366,214,367" shape="poly">
+    <area target="" alt="Chhattisgarh" title="Chhattisgarh" href="index - Chhattisgarh.html" coords="294,288,281,291,269,291,269,298,265,306,259,310,250,313,245,324,247,332,247,339,245,347,243,357,254,368,244,373,241,381,250,385,253,397,262,385,272,382,270,367,264,355,272,354,279,348,277,337,285,331,297,331,300,317,309,307,318,301,314,292,307,279,300,281" shape="poly">
+    <area target="" alt="Bihar" title="Bihar" href="index - Bihar.html" coords="315,213,323,214,330,223,343,227,357,231,366,231,373,232,379,233,391,233,386,242,389,247,384,252,380,260,369,260,362,258,355,260,350,266,342,267,337,264,329,265,322,264,310,262,308,254,317,249,325,249,323,241,317,238,321,232,321,222" shape="poly">
+    <area target="" alt="Jharkhand" title="Jharkhand" href="index - Jharkhand.html" coords="307,272,315,270,323,273,329,271,336,274,344,270,353,268,362,265,372,267,384,265,384,275,377,279,368,276,367,284,358,284,351,289,354,296,360,297,352,301,349,310,338,310,338,304,329,304,321,302" shape="poly">
+    <area target="" alt="Orissa" title="Orissa" href="index - Orissa.html" coords="321,307,310,317,302,326,294,338,286,337,284,351,285,359,271,358,277,366,277,375,263,393,270,396,275,393,281,390,286,387,294,382,304,378,313,379,322,379,348,361,360,349,370,342,370,328,373,322,370,314,358,305,350,314,341,315,332,311" shape="poly">
+    <area target="" alt="West Bengal" title="West Bengal" href="index - West Bengal.html" coords="405,222,394,223,396,235,390,242,394,250,389,256,391,267,385,275,378,282,358,288,363,296,371,302,376,312,388,312,398,310,407,310,400,285,402,277,396,260,409,257,396,241,406,233,413,242,422,228" shape="poly">
+    <area target="" alt="Uttaranchal" title="Uttaranchal" href="#" coords="233,128,220,130,210,134,206,144,216,155,217,166,236,172,249,172,251,156,262,152" shape="poly">
+    <area target="" alt="Assam" title="Assam" href="index - Assam.html" coords="427,247,421,241,428,230,441,228,495,220,512,201,535,199,530,207,540,210,504,232,501,242,490,244,488,259,478,265,477,256,465,244,453,242,435,240" shape="poly">
+    <area target="" alt="Arunachal Pradesh" title="Arunachal Pradesh" href="index - Arunachal.html" coords="492,217,481,217,471,219,466,212,458,208,466,203,476,203,484,195,489,185,500,183,506,176,512,176,522,179,532,171,539,176,541,188,547,190,554,195,552,201,550,207,552,219,538,221,524,230,524,221,538,215,536,206,538,200,524,195,514,196" shape="poly">
+    <area target="" alt="Meghalaya" title="Meghalaya" href="index - Meghalaya.html" coords="443,258,433,258,427,249,434,244,444,244,449,248,460,245,472,252,471,261,460,257" shape="poly">
+    <area target="" alt="Tripura" title="Tripura" href="index - Tripura.html" coords="473,265,469,270,464,277,457,281,452,287,452,294,456,300,462,293,467,285,474,273" shape="poly">
+    <area target="" alt="Nagaland" title="Nagaland" href="index - Nagaland.html" coords="520,224,506,233,504,240,497,244,492,252,501,250,511,249,517,255,521,246" shape="poly">
+    <area target="" alt="Manipur &amp; Mizoram" title="Manipur &amp; Mizoram" href="index - Mizoram.html" coords="501,256,495,260,488,269,481,277,474,279,471,290,473,302,483,326,485,304,496,298,510,280,516,267,509,252" shape="poly">
+    <area target="" alt="Andhra Pradesh" title="Andhra Pradesh" href="index - Andra.html" coords="300,382,292,388,285,395,274,401,260,406,251,410,241,416,232,419,225,424,214,425,213,433,204,436,194,436,188,441,181,441,173,443,173,453,169,458,166,464,174,470,180,471,178,479,186,476,197,485,193,499,203,495,213,495,222,486,232,486,230,474,230,451,243,436,248,439,258,428,273,427,275,410,282,407,293,406,321,384" shape="poly">
+    <area target="" alt="Karnataka" title="Karnataka" href="index - Karnatka.html" coords="180,388,175,400,164,407,150,407,146,415,133,417,123,421,125,430,119,436,115,454,124,497,131,501,140,511,150,516,157,521,165,517,177,515,175,499,185,496,192,496,193,486,183,482,172,482,176,474,165,474,164,464,169,449,169,440,175,433" shape="poly">
+    <area target="" alt="Tamil Nadu" title="Tamil Nadu" href="index - Tamil Nadu.html" coords="229,488,223,499,211,501,194,506,183,503,182,513,178,523,168,523,156,527,162,536,163,546,166,554,172,561,172,570,168,584,168,577,165,591,171,593,177,587,181,577,189,571,203,571,203,555,215,548,218,533,211,533,201,530,200,521,210,520,220,520,232,494,227,508" shape="poly">
+    <area target="" alt="Kerala" title="Kerala" href="index - Kerala.html" coords="126,501,132,512,137,522,144,537,148,551,151,556,149,568,152,576,163,590,163,578,167,572,166,564,163,557,156,552,157,545,158,535,150,527,145,518,138,513" shape="poly">
+</map>
+</div>
+</div>
+</section>
+        
+
+<!--icons section starts-->
+
+
+<!--icons section ends-->
+
+<section id="gallery">
+  <div class="container" >
+      <div class="row">
+          
+
+          <div id="jammu-kashmir-food" class="filter-gal-par">
+            
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <div class="image-container">
+                  <img src="images/rouf-dance.jpg" class="img-responsive">
+                  <div class="overlay-text">Jammu & Kashmir</div>
+                  <div class="dish-overlay">Rouf</div>
+              </div>
+            </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <div class="image-container">
+                  <img src="images/nati.jpeg" class="img-responsive">
+                  <div class="overlay-text">Himachal Pradesh</div>
+                  <div class="dish-overlay">Nati</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <div class="image-container">
+                  <img src="images/bhangra.jpg" class="img-responsive">
+                  <div class="overlay-text">Punjab</div>
+                  <div class="dish-overlay">Bhangra</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+                  <img src="images/ghoomar.jpg" class="img-responsive">
+                  <div class="overlay-text">Rajasthan</div>
+                  <div class="dish-overlay">Ghoomar</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <div class="image-container">
+                  <img src="marketimages/6pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Rajasthan</div>
+                  <div class="dish-overlay">Daal Baati Churma</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+                  <img src="marketimages/7pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Delhi</div>
+                  <div class="dish-overlay">Golgappe</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <div class="image-container">
+                  <img src="marketimages/8pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Madya Pradesh</div>
+                  <div class="dish-overlay">Poha</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <div class="image-container">
+                  <img src="marketimages/9pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Maharashtra</div>
+                  <div class="dish-overlay">Vada Pav</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+                  <img src="marketimages/10pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Goa</div>
+                  <div class="dish-overlay">Fish Curry</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <div class="image-container">
+                  <img src="marketimages/11pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">West Bengal</div>
+                  <div class="dish-overlay">Rasgulla</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <div class="image-container">
+                  <img src="marketimages/12pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Kerela</div>
+                  <div class="dish-overlay">Appam</div>
+                </div>
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+                  <img src="marketimages/13pui.jpeg" class="img-responsive">
+                  <div class="overlay-text">Tamil Nadu</div>
+                  <div class="dish-overlay">Dosa</div>
+                </div>
+              </div>
+              
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+                <img src="marketimages/14pui.jpeg" class="img-responsive">
+                <div class="overlay-text">Sikkim</div>
+                  <div class="dish-overlay">Momo</div>
+                </div>
+            </div>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <div class="image-container">
+              <img src="marketimages/15pui.jpeg" class="img-responsive">
+              <div class="overlay-text">Nagaland</div>
+                  <div class="dish-overlay">Bamboo Shoot Curry</div>
+                </div>
+          </div>
+          
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="image-container">
+            <img src="marketimages/16pui.jpeg" class="img-responsive">
+            <div class="overlay-text">Telangana</div>
+                  <div class="dish-overlay">Biryani</div>
+                </div>
+        </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+ 
+  
+  
+  <!--contact section starts-->
+
+
+
+  <!--contact section ends-->
+  
+  <!--footer section starts-->
+  <section class="footer">
+      <div class="box-container">
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#">home</a>
+              <a href="#">about</a>
+              <a href="#">products</a>
+              <a href="#">review</a>
+              <a href="#">contact</a>
+          </div>
+          <div class="box">
+              <h3>Extra links</h3>
+              <a href="#">my account</a>
+              <a href="#">my order</a>
+              <a href="#">my favorites</a>
+          </div>
+          
+  
+          <div class="box">
+              <h3>contact info</h3>
+              <a href="#">+91 8588093423</a>
+              <a href="#">tejasvibazaar@gmail.com</a>
+              <a href="#">Noida, UP - 201301</a>
+            <img src="/images/payment.png" alt="">
+         
+          </div>
+      </div>
+     
+  </section>
+  
+  <!--footer section ends-->
+  
+  
+  
+  
+  
+  
+  </body>
+  </html>

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+.rating {
+  font-size: 24px; /* Adjust the size of the stars */
+  color: gold; /* Color of the stars */
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: darkorange; /* Change color on hover */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 9%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+:root {
+  --bg-color: #111111;
+  --second-bg-color: #151515;
+  --text-color: white;
+  --main-color: #04fffb;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;    
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9%;
+}
+
+
+
+.navbar a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  width: 50px;
+}
+
+
+.heading{
+font-size: 8rem; 
+text-align: center;
+margin: 0.1rem 0;
+}
+
+.monuments{
+background: var(--second-bg-color);
+}
+.monuments-box{
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.monuments.heading{
+margin-bottom: 5rem;
+}
+.monuments-box img {
+  width: 15rem;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  /* Removed the box-shadow */
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Changed to 5 columns */
+  gap: 2rem; /* Adjust the gap between the cards as needed */
+}
+
+.monument-item {
+  min-height: 275px; /* Half of 550px */
+  max-width: 225px;  /* Half of 450px */
+  background: rgba(0, 0, 0, 0.7);
+  border: 3px solid rgba(238, 238, 238, 0.2);
+  border-radius: 2rem;
+  margin: 0 1rem;  /* Adjusted margin to maintain spacing */
+  padding: 15px 30px; /* Half of 30px 60px */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.monument-item img {
+  width: 100%;  /* Make the image full width */
+  height: 75%;  /* Make the image occupy 3/4th of the card's height */
+  object-fit: cover; /* Ensures the image covers the available space without distortion */
+  border-radius: 0;  /* Removes the circular border */
+}
+.monument-item h2 {
+  font-size: 1.4rem; /* Adjust the font size if needed */
+  margin-top: auto;  /* Ensures the text stays at the bottom */
+}
+
+.monument-item p {
+  font-size: 0.65rem; /* Half of 1.3rem */
+}
+
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--bg-color);
+}
+
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 16px;
+  color: white;
+}
+
+@media(max-width:991px){
+header{
+padding: 2rem 3%;
+}
+section{
+padding: 10rem 3% 2rem;
+}
+
+.projects .wrapper{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.footer{
+padding: 2rem 3%;
+}
+}
+
+
+
+
