@@ -1,1 +1,2 @@
 
+India is known for its rich and diverse culture that dates back thousands of years. From traditional festivals and colorful clothing to classical music, dance, and delicious cuisines, Indian culture reflects unity in diversity. Each state has its own unique customs, languages, art forms, and heritage. This project aims to explore and celebrate the vibrant traditions that make India truly incredible.
